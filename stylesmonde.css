@@ -1,30 +1,55 @@
+body {
+margin: 10%;
+}
 
+h1, h2 {
+  font-size: 20px;
+  text-align: center;
+}
 
+.actu {
+  border-bottom: 10px solid;
+ }
+
+ /* 1ere ligne */
 .sides {
     display: flex;
     justify-content: space-around;
     width : 100%;
- 
 }
 
 .sidea, .sideb, .sidec {
-  max-width:100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 22%;
+
 }
 
-.populaire {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+img {
+ width: 200px;
+ height: 180px;
+}
 
-  }
-  
-  .populaire > div {
-    background-color: #f1f1f1;
-    width : 25%;
-    margin: 3%;
-    font-size: 20px;
-  }
+/* 2eme ligne */
+.populaire2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width : 100%;
+}
 
-  .actu {
-    border-bottom: 10px solid;
-   }
+.art1, .art2, .art3, .art4, .art5, .art6 {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: wrap;
+width: 40%;
+
+}
+
+.populaire2 > img {
+width: 400px;
+height: 180px;
+}
